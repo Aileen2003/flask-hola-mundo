@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "API funcionando en Flask"
+    return "API funcionando en Railway"
 
 @app.route("/saludo")
 def saludo():

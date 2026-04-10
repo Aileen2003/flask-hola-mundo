@@ -53,8 +53,8 @@ jobs:
       - name: Etiquetar imagen
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          docker tag flask-hola-mundo:${{ github.sha }} aileen2003/flask-hola-mundo:latest
-          docker tag flask-hola-mundo:${{ github.sha }} aileen2003/flask-hola-mundo:${{ github.sha }}
+          docker tag flask-hola-mundo:${{ github.sha }} aileen200/flask-hola-mundo:latest
+          docker tag flask-hola-mundo:${{ github.sha }} aileen200/flask-hola-mundo:${{ github.sha }}
 
       - name: Publicar imagen
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
